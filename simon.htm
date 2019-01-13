@@ -28,7 +28,7 @@
         recallIndex = 0;
 
         addBox();
-        playSequence();
+        displaySequence();
     }
 
     function sleep(ms) {
@@ -36,14 +36,14 @@
     }
 
     // Display the sequence
-    async function playSequence(){
+    async function displaySequence(){
         playMode = false;
         recallIndex = 0;
 
         for(let value of sequence){
             await sleep(1000);
             let elementId = boxElementId(value);
-            console.log("play " + elementId);
+            console.log("display " + elementId);
             light(elementId);
         }
     
@@ -98,7 +98,7 @@
                 // done
                 console.log("recall done");
                 addBox();
-                playSequence();
+                displaySequence();
             }   
         }
     }

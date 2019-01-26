@@ -1,0 +1,30 @@
+<!-- https://github.com/thisisjosh/simonjs -->
+<style>
+    .box {
+       margin: 2px;
+       width: 49%;
+       height:49%;
+       float: left;
+       opacity: 0.25;
+    }
+
+    html { background: rgb(3, 28, 29); }
+    #tl{ background: green; }
+    #tr{ background: red; }
+    #bl{ background: yellow; }
+    #br{ background: blue; }
+</style>
+
+<html>
+    <script src="simon.js"></script>
+    <body onload="start()">
+        <div class="row">
+            <div id="tl" class="box" onclick="presh('tl')"></div>
+            <div id="tr" class="box" onclick="presh('tr')"></div>
+        </div>
+        <div class="row">
+            <div id="bl" class="box" onclick="presh('bl')"></div>
+            <div id="br" class="box" onclick="presh('br')"></div>
+        </div>
+    </body>
+</html>

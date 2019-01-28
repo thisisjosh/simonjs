@@ -1,4 +1,4 @@
-// https://github.com/thisisjosh/simonj
+// https://github.com/thisisjosh/simonjs
 
 var sequence = [];
 var playMode = false;
